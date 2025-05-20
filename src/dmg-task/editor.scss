@@ -1,0 +1,101 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.dmg-select-attribute {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 0.8em;
+}
+
+/**
+ * Post List
+ **/
+
+.dmg-post-list__container {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.dmg-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.dmg-post-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border: #eee 1px solid;
+    padding: 0.3em;
+    list-style: none;
+}
+
+.dmg-post-list__item:hover {
+    background: #eee;
+}
+
+.dmg-post-list__item--selected {
+    background: #fbabab;
+    border: #000 1px solid;
+}
+
+.dmg-post-list__item--selected:hover {
+    background: #eee;
+}
+
+/**
+ * Pagination
+ **/
+
+.dmg-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.2em;
+    margin: 0.8em 0;
+}
+
+.dmg-pagination__button {
+    padding: 0.4em 0.8em;
+    background: #eee;
+    border: #000 1px solid;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dmg-pagination__button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.dmg-pagination__button--disabled {
+    background: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.dmg-pagination__button--disabled:hover {
+    background: #eee;
+    color: #aaa;
+}
+
+.dmg-pagination__button--active {
+    background: #000;
+    color: #fff;
+}
+
+.dmg-pagination__button--active:hover {
+    background: #000;
+    color: #fff;
+}

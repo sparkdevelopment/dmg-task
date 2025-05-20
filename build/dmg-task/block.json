@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "dmg-task/stylised-link",
+  "version": "0.1.0",
+  "title": "Stylised Link",
+  "category": "widgets",
+  "icon": "admin-links",
+  "description": "Creates a stylised link to the selected post.",
+  "example": {},
+  "attributes": {
+    "targetPostId": {
+      "type": "number",
+      "default": 0
+    },
+    "targetPostTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "targetPostLink": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "dmg-task",
+  "editorScript": [
+    "file:./index.js",
+    "file:./metadata-sync.js"
+  ],
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,24 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.dmg-read-more {
+    background: #21759b;
+    color: #fff;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dmg-read-more__link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.dmg-read-more__link:hover {
+    text-decoration: underline;
+}
